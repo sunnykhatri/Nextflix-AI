@@ -1,0 +1,26 @@
+{
+  "name": "netflix-ai",
+  "version": "1.0.0",
+  "description": "The next big thing in streaming with AI integration.",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com-sunny:sunnykhatri/nextflix-aI.git"
+  },
+  "license": "ISC",
+  "author": "Sunny Khatri",
+  "type": "module",
+  "scripts": {
+    "start": "parcel src/index.html --open",
+    "build": "parcel build src/index.html --dist-dir build",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.0.17",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "tailwindcss": "^4.0.17"
+  },
+  "devDependencies": {
+    "parcel": "^2.14.3"
+  }
+}
