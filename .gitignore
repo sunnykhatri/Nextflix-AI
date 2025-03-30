@@ -2,3 +2,5 @@
 /.DS_Store
 /dist
 /.parcel-cache
+/build
+/.firebase
