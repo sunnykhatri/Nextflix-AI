@@ -1,13 +1,11 @@
 import React from "react";
+import Body from "./components/Body";
 import ReactDOM from "react-dom/client";
 
 
 const AppLayout = () => {
     return (
-        <div className="app-layout">
-            <h1>Welcome to Netflix AI</h1>
-            <p>This is a simple HTML page for the Netflix AI project.</p>
-        </div>
+        <Body />
     );
 }
 
