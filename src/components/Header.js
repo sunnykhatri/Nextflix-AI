@@ -42,18 +42,14 @@ const Header = () => {
         navigate("/");
       }
     });
-    
+
     // Unsubscribe when component unmount
     return () => unsubscribe();
   }, []);
 
   return (
-    <div className="absolute top-0 left-0 right-0 flex justify-between items-center p-4 bg-gradient-to-b from-black w-full mx-auto">
-      <img
-        className="w-36"
-        src={LOGO}
-        alt="Logo"
-      />
+    <div className="absolute top-0 left-0 right-0 flex px-14 justify-between items-center p-4 bg-gradient-to-b from-black w-full mx-auto z-10">
+      <img className="w-36" src={LOGO} alt="Logo" />
       {user && (
         <div className="flex">
           <img alt="userIcon" src={user.photoURL} />
