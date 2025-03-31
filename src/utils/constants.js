@@ -8,9 +8,11 @@ export const API_OPTIONS = {
   headers: {
     accept: "application/json",
     Authorization:
-      "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2YzkyYzU4ZmJhNzY4OWRkMGQyY2I1YTdmN2U5MTE0NyIsIm5iZiI6MTc0MzM5NTAwNy43NTcsInN1YiI6IjY3ZWExOGJmYjU5OTdhMDI2MWU1NjAyZCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.gZgxk1T5F8mQygBEjcVYLfJVMZn1NZ34MLJ1vS_bpUk",
+      "Bearer TOKEN",
   },
 };
+
+export const IMG_CDN_URL = "https://image.tmdb.org/t/p/w780";
 
 export const NOW_PLAYING_MOVIES = [
   {
