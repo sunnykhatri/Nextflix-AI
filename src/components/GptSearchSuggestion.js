@@ -1,9 +1,25 @@
-import React from 'react'
+import React from "react";
+import { useSelector } from "react-redux";
+import MovieList from "./MovieList";
 
 const GptSearchSuggestion = () => {
-  return (
-    <div>GptSearchSuggestion</div>
-  )
-}
+  const { movies, movieNames } = useSelector((store) => store.gpt);
+  if (!movieNames) return;
 
-export default GptSearchSuggestion
+  return (
+    <div className="bg-black opacity-90 h-screen mx-6">
+      {movieNames && (
+        <p className="text-white px-6 py-5">Search Result: {movieNames}</p>
+      )}
+      {movieNames.map((movieName, index) => (
+          <MovieList
+            key={movieName}
+            title={movieName}
+            movies={movies[index]}
+          />
+        ))}
+    </div>
+  );
+};
+
+export default GptSearchSuggestion;

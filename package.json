@@ -10,7 +10,7 @@
   "author": "Sunny Khatri",
   "type": "module",
   "scripts": {
-    "start": "parcel src/index.html --open",
+    "start": "parcel src/index.html",
     "build": "parcel build src/index.html --dist-dir build",
     "test": "jest"
   },
@@ -21,10 +21,13 @@
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-redux": "^9.2.0",
-    "tailwindcss": "^4.0.17"
+    "tailwindcss": "^4.0.17",
+    "together-ai": "^0.13.0"
   },
   "devDependencies": {
+    "buffer": "^6.0.3",
     "parcel": "^2.14.3",
+    "process": "^0.11.10",
     "react-router-dom": "^7.4.1"
   }
 }
