@@ -8,11 +8,17 @@ export const API_OPTIONS = {
   headers: {
     accept: "application/json",
     Authorization:
-      "Bearer",
+      "Bearer ",
   },
 };
 
 export const IMG_CDN_URL = "https://image.tmdb.org/t/p/w780";
+
+export const SUPPORTED_LANGUAGES = [
+  { identifier: "en", name: "English" },
+  { identifier: "hindi", name: "Hindi" },
+  { identifier: "es", name: "Spanish" },
+];
 
 export const NOW_PLAYING_MOVIES = [
   {
